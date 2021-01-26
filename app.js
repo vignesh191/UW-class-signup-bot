@@ -18,7 +18,7 @@ const startBot = () => {
 async function browserConfig() {
     const browser = await puppeteer.launch();
     var classPage = await browser.newPage();
-    console.log('hi', classDetailsURL)
+    
     //to get class details
     await classPage.goto(classDetailsURL)
 
